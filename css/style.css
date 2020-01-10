@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+hp-content {
+    display: flex;
+    background-color: darkolivegreen;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+hp-presentation > hp-slide {
+    display: none;
+}
+
+hp-presentation > hp-slide.active {
+    display: inline-block;
+}
+
+hp-presentation {
+    display: block;
+    background-color: white;
+    width: 80vmin;
+    height: 80vmin;
+}
+
+hp-slide {
+   display: inline-block;
+   background-color: darkgoldenrod; 
+   width: 80%;
+   height: 80%;
+   margin: 10%;
+   font-size: 6vmin;
+   font-weight: bold;
+   font-family: sans-serif;
+   text-align: center;
+}
+
+hp-chooser {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hp-chooser * {
+    max-width: 20%;
+    margin: 5% 2.5%;
+}
